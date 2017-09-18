@@ -5,8 +5,6 @@ all: hw1
 hw1: main.o Shapes.o Media.o
 ifeq (${OS}, Windows_NT)
 	g++ -o hw1 main.o Shapes.o Media.o -lgtest
-elifeq (${OS}, Linux)
-	g++ -o hw1 main.o Shapes.o Media.o -lgtest
 else
 	g++ -o hw1 main.o Shapes.o Media.o -lgtest -lpthread
 endif
@@ -20,8 +18,6 @@ Media.o: $(INC_DIR)/Media.h Media.cpp
 
 clean:	
 ifeq (${OS}, Windows_NT)
-	del *.o *.exe
-elifeq (${OS}, Linux)
 	del *.o *.exe
 else
 	rm -f *.o hw1
