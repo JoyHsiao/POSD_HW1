@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Circle	include/Shapes.h	/^    Circle(double centerX, double centerY, double radius, std::string name = "c"):$/;"	f	class:Circle
+Circle	include/Shapes.h	/^class Circle : public Shape{$/;"	c
+ComboMedia	Media.cpp	/^ComboMedia::ComboMedia() {$/;"	f	class:ComboMedia
+ComboMedia	include/Media.h	/^    ComboMedia(std::vector<Media *> & mds): medias(mds){}$/;"	f	class:ComboMedia
+ComboMedia	include/Media.h	/^class ComboMedia : public Media {$/;"	c
+Coordinate	include/Shapes.h	/^typedef struct Coordinate$/;"	s
+EXP_H	utSort.h	2;"	d
+MEDIA_H_INCLUDED	include/Media.h	2;"	d
+M_PI	include/Shapes.h	5;"	d
+Media	include/Media.h	/^class Media {$/;"	c
+Rectangle	include/Shapes.h	/^    Rectangle(double ulcx, double ulcy, double length, double width, std::string name = "r"):$/;"	f	class:Rectangle
+Rectangle	include/Shapes.h	/^class Rectangle : public Shape {$/;"	c
+SHAPES_H_INCLUDED	include/Shapes.h	2;"	d
+Shape	include/Shapes.h	/^    Shape(std::string shapeName):name(shapeName){}$/;"	f	class:Shape
+Shape	include/Shapes.h	/^class Shape {$/;"	c
+ShapeMedia	include/Media.h	/^    ShapeMedia(Shape * sh):shape(sh){}$/;"	f	class:ShapeMedia
+ShapeMedia	include/Media.h	/^class ShapeMedia : public Media {$/;"	c
+Sort	include/Sort.h	/^class Sort {$/;"	c
+TEST	utSort.h	/^TEST (Sort, sortByDecreasingArea) {$/;"	f
+TEST	utSort.h	/^TEST (Sort, sortByDecreasingPerimeter) {$/;"	f
+TEST	utSort.h	/^TEST (Sort, sortByIncreasingArea) {$/;"	f
+TEST	utSort.h	/^TEST (Sort, sortByIncreasingCompactness) {$/;"	f
+TEST	utSort.h	/^TEST (Sort, sortByIncreasingPerimeter) {$/;"	f
+TextMedia	include/Media.h	/^    TextMedia(Rectangle boundingBox, std::string text):boundingBox(boundingBox), text(text){}$/;"	f	class:TextMedia
+TextMedia	include/Media.h	/^class TextMedia : public Media {$/;"	c
+Triangle	include/Shapes.h	/^    Triangle(vertex vertex_A, vertex vertex_B, vertex vertex_C, std::string name = "t"):$/;"	f	class:Triangle
+Triangle	include/Shapes.h	/^class Triangle : public Shape {$/;"	c
+add	Media.cpp	/^void ComboMedia::add(Media * ma){$/;"	f	class:ComboMedia
+area	Media.cpp	/^double ComboMedia::area() const{$/;"	f	class:ComboMedia
+area	Media.cpp	/^double ShapeMedia::area() const{$/;"	f	class:ShapeMedia
+area	include/Shapes.h	/^    double area() const {$/;"	f	class:Triangle
+area	include/Shapes.h	/^    double area() const {return M_PI*r*r;}$/;"	f	class:Circle
+area	include/Shapes.h	/^    double area() const {return l*w;}$/;"	f	class:Rectangle
+boundingBox	include/Media.h	/^    Rectangle boundingBox;$/;"	m	class:TextMedia
+cx	include/Shapes.h	/^    double cx,cy,r;$/;"	m	class:Circle
+cy	include/Shapes.h	/^    double cx,cy,r;$/;"	m	class:Circle
+distanceOfVertexs	Shapes.cpp	/^double distanceOfVertexs(const vertex vertex_1, const vertex vertex_2) {$/;"	f
+getMedias	Media.cpp	/^std::vector<Media *> ComboMedia::getMedias(){$/;"	f	class:ComboMedia
+getShape	Media.cpp	/^Shape * ShapeMedia::getShape(){$/;"	f	class:ShapeMedia
+getShapeName	include/Shapes.h	/^    std::string getShapeName(){$/;"	f	class:Shape
+isTriangle	include/Shapes.h	/^    static bool isTriangle(vertex vertex_A, vertex vertex_B, vertex vertex_C){$/;"	f	class:Triangle
+l	include/Shapes.h	/^    double x,y,l,w;$/;"	m	class:Rectangle
+main	main.cpp	/^int main( int argc , char **argv )$/;"	f
+medias	include/Media.h	/^    std::vector<Media *> medias;$/;"	m	class:ComboMedia
+name	include/Shapes.h	/^    std::string name = "Shape";$/;"	m	class:Shape
+perimeter	Media.cpp	/^double ComboMedia::perimeter() const{$/;"	f	class:ComboMedia
+perimeter	Media.cpp	/^double ShapeMedia::perimeter() const{$/;"	f	class:ShapeMedia
+perimeter	include/Shapes.h	/^    double perimeter() const {$/;"	f	class:Triangle
+perimeter	include/Shapes.h	/^    double perimeter() const {return (2*l)+(2*w);}$/;"	f	class:Rectangle
+perimeter	include/Shapes.h	/^    double perimeter() const {return M_PI*r*2;}$/;"	f	class:Circle
+r	include/Shapes.h	/^    double cx,cy,r;$/;"	m	class:Circle
+setShapeName	include/Shapes.h	/^    void setShapeName(std::string shapeName){$/;"	f	class:Shape
+shape	include/Media.h	/^    Shape * shape;$/;"	m	class:ShapeMedia
+sortByDecreasingPerimeter	Shapes.cpp	/^void sortByDecreasingPerimeter(std::vector<Shape *> & shapes) {$/;"	f
+sumOfArea	Shapes.cpp	/^double sumOfArea(const std::vector<Shape *> & shapes) {$/;"	f
+sumOfPerimeter	Shapes.cpp	/^double sumOfPerimeter(const std::vector<Shape *> & shapes){$/;"	f
+text	include/Media.h	/^    std::string text;$/;"	m	class:TextMedia
+theLargestArea	Shapes.cpp	/^Shape* theLargestArea(const std::vector<Shape *> & shapes){$/;"	f
+toString	include/Shapes.h	/^    std::string toString() const {$/;"	f	class:Circle
+toString	include/Shapes.h	/^    std::string toString() const {$/;"	f	class:Rectangle
+toString	include/Shapes.h	/^    std::string toString() const {$/;"	f	class:Triangle
+v1	include/Shapes.h	/^    vertex v1;$/;"	m	class:Triangle
+v2	include/Shapes.h	/^    vertex v2;$/;"	m	class:Triangle
+v3	include/Shapes.h	/^    vertex v3;$/;"	m	class:Triangle
+vertex	include/Shapes.h	/^}vertex;$/;"	t	typeref:struct:Coordinate
+w	include/Shapes.h	/^    double x,y,l,w;$/;"	m	class:Rectangle
+x	include/Shapes.h	/^    double x,y,l,w;$/;"	m	class:Rectangle
+x	include/Shapes.h	/^    double x;$/;"	m	struct:Coordinate
+y	include/Shapes.h	/^    double x,y,l,w;$/;"	m	class:Rectangle
+y	include/Shapes.h	/^    double y;$/;"	m	struct:Coordinate
