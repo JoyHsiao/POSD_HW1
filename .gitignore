@@ -31,3 +31,9 @@
 *.out
 *.app
 .vscode/
+
+# cscope
+cscope.*
+tags
+
+bk_utSort.h
