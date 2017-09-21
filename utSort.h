@@ -229,7 +229,7 @@ TEST (Sort, sortByIncreasingCompactness) {
     
     Sort::sortByIncreasingCompactness(&shape_list);
     for(Shape * shape_p: shape_list){
-        area.push_back((4*M_PI*shape_p->area())/pow(shape_p->perimeter(),2));
+        area.push_back(shape_p->area()/shape_p->perimeter());
     }
 
 #ifdef DEBUG5
